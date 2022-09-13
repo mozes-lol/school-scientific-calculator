@@ -43,7 +43,7 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
         jButton_Multiply = new javax.swing.JButton();
         jButton_Divide = new javax.swing.JButton();
         jButton_Mod = new javax.swing.JButton();
-        jButton_Divide1 = new javax.swing.JButton();
+        jButton_Clear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -181,11 +181,11 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jButton_Divide1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton_Divide1.setText("C");
-        jButton_Divide1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Clear.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton_Clear.setText("C");
+        jButton_Clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Divide1ActionPerformed(evt);
+                jButton_ClearActionPerformed(evt);
             }
         });
 
@@ -234,7 +234,7 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
                                     .addComponent(jButton_Divide, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jTextField1_Main))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jButton_Divide1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton_Clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -267,7 +267,7 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
                     .addComponent(jButton_Divide, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_Mod, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton_Divide1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_Clear, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -329,9 +329,10 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_ModActionPerformed
 
-    private void jButton_Divide1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Divide1ActionPerformed
+    private void jButton_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ClearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Divide1ActionPerformed
+        jTextField1_Main.setText("0");
+    }//GEN-LAST:event_jButton_ClearActionPerformed
 
     private void jButton_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_7ActionPerformed
         // TODO add your handling code here:
@@ -400,8 +401,8 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton_8;
     private javax.swing.JButton jButton_9;
     private javax.swing.JButton jButton_Add;
+    private javax.swing.JButton jButton_Clear;
     private javax.swing.JButton jButton_Divide;
-    private javax.swing.JButton jButton_Divide1;
     private javax.swing.JButton jButton_Equals;
     private javax.swing.JButton jButton_Mod;
     private javax.swing.JButton jButton_Multiply;
