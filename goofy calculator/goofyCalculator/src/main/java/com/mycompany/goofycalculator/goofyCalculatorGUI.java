@@ -274,38 +274,38 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addDigit(int digit){
+    private void inputDigit(int digit){
         jTextField1_Main.setText(jTextField1_Main.getText() + String.valueOf(digit));
     }
     
     private void jButton_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_5ActionPerformed
         // TODO add your handling code here:
-        addDigit(5);
+        inputDigit(5);
     }//GEN-LAST:event_jButton_5ActionPerformed
 
     private void jButton_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_6ActionPerformed
         // TODO add your handling code here:
-        addDigit(6);
+        inputDigit(6);
     }//GEN-LAST:event_jButton_6ActionPerformed
 
     private void jButton_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1ActionPerformed
         // TODO add your handling code here:
-        addDigit(1); 
+        inputDigit(1); 
     }//GEN-LAST:event_jButton_1ActionPerformed
 
     private void jButton_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_2ActionPerformed
         // TODO add your handling code here:
-        addDigit(2);
+        inputDigit(2);
     }//GEN-LAST:event_jButton_2ActionPerformed
         
     private void jButton_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_3ActionPerformed
         // TODO add your handling code here:
-        addDigit(3);
+        inputDigit(3);
     }//GEN-LAST:event_jButton_3ActionPerformed
 
     private void jButton_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_0ActionPerformed
         // TODO add your handling code here:
-        addDigit(0);
+        inputDigit(0);
     }//GEN-LAST:event_jButton_0ActionPerformed
 
     private void jButton_EqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EqualsActionPerformed
@@ -339,22 +339,22 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
 
     private void jButton_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_7ActionPerformed
         // TODO add your handling code here:
-        addDigit(7);
+        inputDigit(7);
     }//GEN-LAST:event_jButton_7ActionPerformed
 
     private void jButton_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_8ActionPerformed
         // TODO add your handling code here:
-        addDigit(8);
+        inputDigit(8);
     }//GEN-LAST:event_jButton_8ActionPerformed
 
     private void jButton_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_9ActionPerformed
         // TODO add your handling code here:
-        addDigit(9);
+        inputDigit(9);
     }//GEN-LAST:event_jButton_9ActionPerformed
 
     private void jButton_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_4ActionPerformed
         // TODO add your handling code here:
-        addDigit(4);
+        inputDigit(4);
     }//GEN-LAST:event_jButton_4ActionPerformed
 
     /**
