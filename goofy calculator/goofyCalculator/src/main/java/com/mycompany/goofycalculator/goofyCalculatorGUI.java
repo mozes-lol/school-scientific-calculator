@@ -276,6 +276,7 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
 
     int firstNumber;
     int secondNumber;
+    String operation;
     
     private void inputDigit(int digit){
         jTextField1_Main.setText(jTextField1_Main.getText() + String.valueOf(digit));
@@ -283,6 +284,22 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
     
     private void saveFirstNumber(){
         firstNumber = Integer.parseInt(jTextField1_Main.getText());
+        jTextField1_Main.setText("0");
+    }
+    
+    private void calculate(){
+        switch(operation){
+            case "addition":
+                break;
+            case "subtraction":
+                break;
+            case "multiplication":
+                break;
+            case "division":
+                break;
+            case "mod":
+                break;
+        }
     }
     
     private void jButton_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_5ActionPerformed
@@ -321,6 +338,8 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
 
     private void jButton_AddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AddActionPerformed
         // TODO add your handling code here:
+        saveFirstNumber();
+        operation = "addition";
     }//GEN-LAST:event_jButton_AddActionPerformed
 
     private void jButton_SubtractActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SubtractActionPerformed
