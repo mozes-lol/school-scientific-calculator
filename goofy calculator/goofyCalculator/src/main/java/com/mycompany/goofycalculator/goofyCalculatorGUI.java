@@ -274,8 +274,15 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    int firstNumber;
+    int secondNumber;
+    
     private void inputDigit(int digit){
         jTextField1_Main.setText(jTextField1_Main.getText() + String.valueOf(digit));
+    }
+    
+    private void saveFirstNumber(){
+        firstNumber = Integer.parseInt(jTextField1_Main.getText());
     }
     
     private void jButton_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_5ActionPerformed
