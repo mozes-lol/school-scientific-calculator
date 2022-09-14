@@ -314,7 +314,7 @@ public class goofyCalculatorGUI extends javax.swing.JFrame {
     }
     
     private void jButton_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_5ActionPerformed
-        // TODO add your handling code here:
+
         inputDigit(5);
     }//GEN-LAST:event_jButton_5ActionPerformed
 
